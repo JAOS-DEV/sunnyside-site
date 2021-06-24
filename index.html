@@ -4,67 +4,74 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Sunnyside agency landing page</title>
   </head>
   <body>
     <div class="container">
       <!-- Nav start -->
-      <nav class="nav">
-        <div class="nav_brand">
-          <h1>sunnyside</h1>
-        </div>
-        <div class="nav_btns">
-          <ul>
-            <li class="btn nav_btn"><a href="about">About</a></li>
-            <li class="btn nav_btn"><a href="services">Services</a></li>
-            <li class="btn nav_btn"><a href="projects">Projects</a></li>
-            <li class="btn nav_btn"><a href="contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <!-- Nav end -->
-      <!-- Hero start -->
-      <section class="hero_section">
-        <h1 class="hero_title">We are creatives</h1>
+      <header>
+        <nav class="nav">
+          <h1 class="nav_brand">sunnyside</h1>
+          <!-- hidden default -->
+          <div class="toggle_nav_links">
+            <ul>
+              <li class="nav_item"><a class="nav_link" href="about">About</a></li>
+              <li class="nav_item"><a class="nav_link" href="services">Services</a></li>
+              <li class="nav_item"><a class="nav_link" href="projects">Projects</a></li>
+              <li class="nav_item"><a class="nav_link nav_link-contact" href="contact">Contact</a></li>
+            </ul>
+            <!--  -->
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </nav>
+        <!--  -->
+        <section class="hero_section">
+          <h1 class="hero_title">We are creatives</h1>
 
-        <img class="hero_background_img" src="./images/desktop/image-header.jpg" alt="" />
-        <img class="hero_down_arrow_img" src="./images/icon-arrow-down.svg" alt="" />
-      </section>
-      <!-- Hero end -->
+          <!-- <img class="hero_background_img" src="./images/desktop/image-header.jpg" alt="" /> -->
+          <img class="hero_down_arrow_img" src="./images/icon-arrow-down.svg" alt="" />
+        </section>
+      </header>
+
       <!-- Grid start -->
       <section class="grid_section">
-        <div class="grid_item grid1">
-          <div class="grid_title">Transform your brand</div>
+        <div class="grid_item_text grid1">
+          <h1 class="grid_title">Transform your brand</h1>
           <div class="grid_content">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</div>
-          <a href="#" class="grid_btn">Learn more</a>
+          <a href="#" class="grid_btn btn_line_1">Learn more</a>
         </div>
         <!--  -->
-        <div class="grid grid2">
+        <div class="grid_item_picture grid2">
           <img src="./images/desktop/image-transform.jpg" alt="egg img" class="grid_img" />
         </div>
         <!--  -->
-        <div class="grid grid3">
+        <div class="grid_item_picture grid3">
           <img src="./images/desktop/image-stand-out.jpg" alt="egg img" class="grid_img" />
         </div>
         <!--  -->
-        <div class="grid_item grid4">
-          <div class="grid_title">Stand out to the right audience</div>
+        <div class="grid_item_text grid4">
+          <h1 class="grid_title">Stand out to the right audience</h1>
           <div class="grid_content">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</div>
-          <a href="#" class="grid_btn">Learn more</a>
+          <a href="#" class="grid_btn btn_line_2">Learn more</a>
         </div>
         <!--  -->
         <!--  -->
-        <div class="grid grid5">
-          <img src="./images/desktop/image-graphic-design.jpg" alt="" class="grid_img-top" />
+        <div class="grid_item_picture_text grid5">
+          <img src="./images/mobile/image-graphic-design.jpg" alt="" class="grid_img-top-mobile" />
+          <img src="./images/desktop/image-graphic-design.jpg" alt="" class="grid_img-top-desktop" />
           <div class="grid_pic_text">
-            <h1>Graphic design</h1>
+            <h1>Graphic Design</h1>
             <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
           </div>
         </div>
         <!--  -->
-        <div class="grid grid6">
-          <img src="./images/desktop/image-photography.jpg" alt="" class="grid_img-top" />
+        <div class="grid_item_picture_text grid6">
+          <img src="./images/mobile/image-photography.jpg" alt="" class="grid_img-top-mobile" />
+          <img src="./images/desktop/image-photography.jpg" alt="" class="grid_img-top-desktop" />
           <div class="grid_pic_text">
             <h1>Photography</h1>
             <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
@@ -103,12 +110,14 @@
 
       <!-- Banner Start -->
       <section class="banner_section">
-        <div class="banner">
-          <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="" class="banner_img" />
-          <img src="./images/desktop/image-gallery-orange.jpg" alt="" class="banner_img" />
-          <img src="./images/desktop/image-gallery-cone.jpg" alt="" class="banner_img" />
-          <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="" class="banner_img" />
-        </div>
+        <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="" class="banner_img-mobile" />
+        <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="" class="banner_img-desktop" />
+        <img src="./images/mobile/image-gallery-orange.jpg" alt="" class="banner_img-mobile" />
+        <img src="./images/desktop/image-gallery-orange.jpg" alt="" class="banner_img-desktop" />
+        <img src="./images/mobile/image-gallery-cone.jpg" alt="" class="banner_img-mobile" />
+        <img src="./images/desktop/image-gallery-cone.jpg" alt="" class="banner_img-desktop" />
+        <img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="" class="banner_img-mobile" />
+        <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="" class="banner_img-desktop" />
       </section>
       <!-- Banner End -->
       <!-- Footer Start -->
@@ -140,5 +149,6 @@
     </div>
 
     <!-- <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.</div> -->
+    <script src="./script.js"></script>
   </body>
 </html>
