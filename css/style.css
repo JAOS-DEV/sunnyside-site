@@ -179,6 +179,10 @@ header {
   grid-template-rows: auto 70vh auto 70vh repeat(2, auto);
 }
 
+.grid_img-top-desktop {
+  display: none;
+}
+
 .grid1 {
   grid-row: 2/3;
 }
