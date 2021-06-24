@@ -63,7 +63,7 @@ a {
 /* Nav */
 header {
   position: relative;
-  background-image: url("/images/mobile/image-header.jpg");
+  background-image: url("../images/mobile/image-header.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -391,7 +391,7 @@ header {
 @media screen and (min-width: 750px) {
   /* Header img */
   header {
-    background-image: url("/images/desktop/image-header.jpg");
+    background-image: url("../images/desktop/image-header.jpg");
   }
 
   /* Show desktop imgs */
