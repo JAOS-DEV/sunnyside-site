@@ -346,7 +346,7 @@ header {
 }
 
 .banner_img-mobile {
-  max-width: 50vw;
+  max-width: 50%;
 }
 
 .banner_img-desktop {
@@ -499,6 +499,28 @@ header {
     align-self: center;
   }
 
+  .grid_title {
+    font-size: 1.5rem;
+  }
+
+  .grid_content {
+    font-size: 1rem;
+  }
+
+  .grid_btn {
+    font-size: 1rem;
+  }
+
+  .grid_pic_text {
+    bottom: 10px;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .grid_item_picture_text h1 {
+    margin-bottom: 1rem;
+  }
+
   .grid_pic_text p {
     font-size: 1rem;
     max-width: 40ch;
@@ -537,17 +559,16 @@ header {
   /* Testimonial section */
   .testimonials_section {
     height: 100vh;
-    margin: 0rem 8rem;
+    margin: 0rem 4rem;
   }
 
   .testimonials_h1 {
     font-size: 1.3rem;
-    margin: 10rem 0rem 2rem 0rem;
+    margin: 4rem 0rem 0rem 0rem;
   }
 
   .testimonial_cards {
     display: flex;
-    padding: 0rem 2rem 2rem 2rem;
   }
 
   .pf_img {
@@ -594,5 +615,45 @@ header {
 
   .socials_icon {
     width: 55px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .grid_title {
+    font-size: 2.5rem;
+  }
+
+  .grid_content {
+    font-size: 1.2rem;
+  }
+
+  .grid_btn {
+    font-size: 1.2rem;
+  }
+
+  .grid_pic_text {
+    bottom: 80px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  .grid_item_picture_text h1 {
+    margin-bottom: 2rem;
+  }
+
+  .grid_pic_text p {
+    font-size: 1.2rem;
+    max-width: 40ch;
+  }
+
+  /* Testimonials */
+  .testimonials_section {
+    height: 100vh;
+    margin: initial;
+  }
+
+  .testimonials_h1 {
+    font-size: 1.1rem;
+    margin: 5rem 0rem;
   }
 }
