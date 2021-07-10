@@ -52,7 +52,7 @@ li,
 a {
   text-decoration: none;
   list-style: none;
-  color: black;
+  color: inherit;
 }
 
 .container {
@@ -104,6 +104,10 @@ header {
   z-index: 10;
 }
 
+.toggleNavClass {
+  display: block;
+}
+
 .toggle_nav_links::before {
   content: "";
   position: absolute;
@@ -128,17 +132,15 @@ header {
   font-family: var(--Font_Barlow_600_800);
   font-weight: 600;
   display: block;
-}
-
-.nav_link {
   color: var(--Grayish_blue);
 }
 
-.nav_link-contact {
-  color: black;
-  padding: 1rem 2rem;
-  border-radius: 100px;
+.nav_item:hover {
   background-color: var(--Yellow);
+  font-weight: 700;
+  border-radius: 100px;
+  color: var(--Very_dark_desaturated_blue);
+  transition: color 2000ms ease, background-color 1000ms ease;
 }
 
 /* Hero section */
@@ -444,23 +446,18 @@ header {
   }
 
   .nav_item {
-    padding: 1rem 1rem;
+    padding: 0.5rem 1rem;
     background-color: initial;
     font-size: 1.2rem;
-  }
-
-  .nav_link {
     color: white;
   }
 
-  .nav_link-contact {
-    background-color: white;
-    color: black;
-    padding: 1rem 1.7rem;
-    text-transform: uppercase;
-    font-family: var(--Font_Fraunces_700_900);
-    font-size: 1rem;
+  .nav_item:hover {
+    background-color: rgba(255, 255, 255, 0.5);
     font-weight: 700;
+    transition: color 1000ms ease, background-color 1000ms ease;
+    border: solid 1px white;
+    border-radius: 100px;
   }
 
   /* Hero */
